@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>adx</artifactId>
+    <groupId>com.adx</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.adx.web</groupId>
+  <artifactId>adxWeb</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>adxWeb Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>5.14</version>
+        <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>adxWeb</finalName>
+  </build>
+</project>
