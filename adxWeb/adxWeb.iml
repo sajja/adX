@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module relativePaths="false" type="J2EE_WEB_MODULE" version="4">
+<module relativePaths="false" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="adxWeb">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -64,45 +76,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-  </component>
-  <component name="WebModuleBuildComponent">
-    <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/target/adxWeb" />
-  </component>
-  <component name="WebModuleProperties">
-    <deploymentDescriptor version="2.3" name="web.xml" optional="false" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
-    <webroots>
-      <root relative="/" url="file://$MODULE_DIR$/src/main/webapp" />
-    </webroots>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/testng-5.14.jar" />
-      <url>jar://$MAVEN_REPOSITORY$/org/testng/testng/5.14/testng-5.14.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/junit-3.8.1.jar" />
-      <url>jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/bsh-2.0b4.jar" />
-      <url>jar://$MAVEN_REPOSITORY$/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/guice-2.0.jar" />
-      <url>jar://$MAVEN_REPOSITORY$/com/google/inject/guice/2.0/guice-2.0.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/aopalliance-1.0.jar" />
-      <url>jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/jcommander-1.5.jar" />
-      <url>jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.5/jcommander-1.5.jar!/</url>
-    </containerElement>
   </component>
 </module>
 

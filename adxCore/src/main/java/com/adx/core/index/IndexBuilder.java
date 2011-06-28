@@ -7,7 +7,9 @@ package com.adx.core.index;
  * Time: 8:53 PM
  * To change this template use File | Settings | File Templates.
  */
-public interface Indexer {
-    public int startIndexing();
-    public void search();
+public interface IndexBuilder {
+    public int buildIndex();
+    public void addDocument();
+    public void removeDocument();
+    public void purge();
 }

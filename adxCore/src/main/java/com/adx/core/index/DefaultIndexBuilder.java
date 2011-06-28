@@ -12,13 +12,25 @@ import java.util.Date;
  * Time: 8:53 PM
  * To change this template use File | Settings | File Templates.
  */
-public class InMemoryIndexer implements Indexer {
+public class DefaultIndexBuilder implements IndexBuilder {
     private DocumentStore documentStore;
 
-
-    public int startIndexing() {
+    public int buildIndex() {
         DomainObject[] documentsToIndex = documentStore.getChangedDocuments(new Date());
+        System.out.println("found " + documentsToIndex.length + " to index");
         return 0;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    public void addDocument() {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    public void removeDocument() {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    public void purge() {
+        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     public void search() {

@@ -12,8 +12,8 @@ import java.io.IOException;
 public class IndexUI {
 
     private boolean started = false;
-    private Indexer indexer;
-    private IndexWorker worker = new IndexWorker(indexer);
+    private IndexBuilder indexBuilder;
+    private IndexWorker worker = new IndexWorker(indexBuilder);
     private Thread workerThread;
 
     public void mainLoop() throws IOException, InterruptedException {
@@ -83,7 +83,7 @@ public class IndexUI {
 
 class IndexWorker implements Runnable {
 
-    private Indexer indexer;
+    private IndexBuilder indexBuilder;
     private volatile boolean loop = true;
     public static final long timeout = 3000;
 
@@ -91,15 +91,15 @@ class IndexWorker implements Runnable {
         this.loop = loop;
     }
 
-    IndexWorker(Indexer indexer) {
-        this.indexer = indexer;
+    IndexWorker(IndexBuilder indexBuilder) {
+        this.indexBuilder = indexBuilder;
     }
 
     public void run() {
         while (loop) {
             try {
                 Thread.sleep(timeout);
-                int count = indexer.startIndexing();
+                int count = indexBuilder.buildIndex();
                 System.out.println(count + " number of documents indexed.");
             } catch (InterruptedException e) {
                 e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
