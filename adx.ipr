@@ -206,10 +206,13 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/adserver/adserver.iml" filepath="$PROJECT_DIR$/adserver/adserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/adx.iml" filepath="$PROJECT_DIR$/adx.iml" />
       <module fileurl="file://$PROJECT_DIR$/adxClient/adxClient.iml" filepath="$PROJECT_DIR$/adxClient/adxClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/adxCore/adxCore.iml" filepath="$PROJECT_DIR$/adxCore/adxCore.iml" />
       <module fileurl="file://$PROJECT_DIR$/adxWeb/adxWeb.iml" filepath="$PROJECT_DIR$/adxWeb/adxWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hadoop/hadoop.iml" filepath="$PROJECT_DIR$/hadoop/hadoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logmonitor/logmonitor.iml" filepath="$PROJECT_DIR$/logmonitor/logmonitor.iml" />
     </modules>
   </component>
   <component name="ProjectResources">
@@ -220,5 +223,26 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
+  <component name="libraryTable">
+    <library name="hadoop">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/commons-digester-1.8.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/commons-lang-2.4.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/commons-logging-1.1.1.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/jackson-mapper-asl-1.0.1.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/jackson-core-asl-1.0.1.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/xmlenc-0.52.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/commons-codec-1.4.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/commons-collections-3.2.1.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/commons-configuration-1.6.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/slf4j-api-1.4.3.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/log4j-1.2.15.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/lib/slf4j-log4j12-1.4.3.jar!/" />
+        <root url="jar://$USER_HOME$/apps/hadoop-0.20.203.0/hadoop-core-0.20.203.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
 </project>
 

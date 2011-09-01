@@ -19,5 +19,8 @@
     <module>adxWeb</module>
     <module>adxCore</module>
     <module>adxClient</module>
+    <module>adserver</module>
+    <module>logmonitor</module>
+    <module>hadoop</module>
   </modules>
 </project>
